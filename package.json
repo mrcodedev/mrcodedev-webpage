@@ -1,0 +1,24 @@
+{
+  "name": "mrcodedev",
+  "version": "1.0.0",
+  "description": "Creating personal web of MrCodeDev",
+  "main": "index.html",
+  "dependencies": {
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass assets/css/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mrcodedev/mrcodedev-personal.git"
+  },
+  "author": "MrCodeDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/mrcodedev/mrcodedev-personal/issues"
+  },
+  "homepage": "https://gitlab.com/mrcodedev/mrcodedev-personal#readme"
+}

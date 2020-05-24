@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Hello Friend';
+  src: url(../fonts/hello-friend.ttf);
+}
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, Tahoma, sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  color: #FFF;
+  background: #A577B4;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
