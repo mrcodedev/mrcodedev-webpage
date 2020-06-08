@@ -25,11 +25,13 @@
 html {
   box-sizing: border-box;
   font-family: "Open Sans", Arial, Tahoma, sans-serif;
+  height: 100%;
 }
 
 body {
   overflow: hidden;
   background: #000;
+  height: 100%;
 }
 
 img,
@@ -39,14 +41,59 @@ video {
 }
 
 ::selection {
-  color: #FFF;
-  background: #A577B4;
+  color: #fff;
+  background: #a577b4;
 }
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.container__friend {
+  /* height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  margin: 0;
+  font-size: 32px;
+}
+
+.friend {
+  color: white;
+  margin: 0;
+  animation: type 0.8s steps(20, end), caret-blink 0.8s ease infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 16px solid white;
+}
+
+@keyframes type {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes caret-blink {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+  100% {
+    border-color: transparent;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
